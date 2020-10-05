@@ -22,15 +22,17 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-    roof = createSprite(450,350,200,20);
-	bob1 = createSprite()
+    roof=new roof(400,100,600,30);
+	
 
 	
-	bob1=new bob();
-	bob2=new bob();
-	bob3=new bob();
-	bob4=new bob();
-	bob5=new bob();
+	bob1=new bob(200,600,100);
+	bob2=new bob(300,600,100);
+	bob3=new bob(400,600,100);
+	bob4=new bob(500,600,100);
+  bob5=new bob(600,600,100);
+  
+  
 
 
 	Engine.run(engine);
@@ -40,9 +42,15 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background("white");
 
   roof.display();
+  bob1.display();
+  bob2.display();
+  bob3.display();
+  bob4.display();
+  bob5.display();
+
   
   drawSprites();
  

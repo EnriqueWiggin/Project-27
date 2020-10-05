@@ -15,10 +15,12 @@ class roof
 	}
 	display()
 	{
+		var roofpos=this.body.position;		
+
 			
 
 			push()
-			translate(roofPos.x, roofPos.y);
+			translate(roofpos.x, roofpos.y);
 			rectMode(CENTER)
 			strokeWeight(4);
 			fill(255,255,0)

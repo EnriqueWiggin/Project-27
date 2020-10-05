@@ -20,15 +20,14 @@ class bob
 	display()
 	{
 			
-			bobpos=this.body.position;		
+			var bobpos=this.body.position;		
 
 			push()
-			translate(paperpos.x, paperpos.y);
+			translate(bobpos.x, bobpos.y);
 			rectMode(CENTER)
-			strokeWeight(3);
+			//strokeWeight(3);
 			fill(255,0,255)
-			imageMode(CENTER); 
-			image(this.image, 0,0,this.r, this.r)
+	        ellipse(0,0,this.r,this.r)
 			pop()
 			
 	}
