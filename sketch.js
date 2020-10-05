@@ -22,7 +22,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-    roof=new roof(400,100,600,30);
+  roof=new roof(400,100,600,30);
 	
 
 	
@@ -31,6 +31,12 @@ function setup() {
 	bob3=new bob(400,600,100);
 	bob4=new bob(500,600,100);
   bob5=new bob(600,600,100);
+
+  rope1=new Rope;
+  rope2=new Rope;
+  rope3=new Rope;
+  rope4=new Rope;
+  rope5=new Rope;
   
   
 
@@ -50,6 +56,12 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
+  rope1.display();
+  rope2.display();
+  rope3.display();
+  rope4.display();
+  rope5.display();
+  
 
   
   drawSprites();

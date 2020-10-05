@@ -1,4 +1,4 @@
-class rope {
+class Rope {
     constructor(body1, body2, offset, offset )
     {
         this.offsetX=offsetX
@@ -12,11 +12,11 @@ class rope {
     World.add(world,this.rope);
 }
 
-rope=new rope(bobObject1.body,roofObject.body,bobDiameter*2,0)
-rope=new rope(bobObject2.body,roofObject.body,bobDiameter*2,0)
-rope=new rope(bobObject3.body,roofObject.body,bobDiameter*2,0)
-rope=new rope(bobObject4.body,roofObject.body,bobDiameter*2,0)
-rope=new rope(bobObject5.body,roofObject.body,bobDiameter*2,0)
+rope=new Rope(bobObject1.body,roofObject.body,bobDiameter*2,0)
+rope=new Rope(bobObject2.body,roofObject.body,bobDiameter*2,0)
+rope=new Rope(bobObject3.body,roofObject.body,bobDiameter*2,0)
+rope=new Rope(bobObject4.body,roofObject.body,bobDiameter*2,0)
+rope=new Rope(bobObject5.body,roofObject.body,bobDiameter*2,0)
 
 
 display(){
