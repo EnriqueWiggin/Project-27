@@ -32,11 +32,11 @@ function setup() {
 	bob4=new bob(500,600,100);
   bob5=new bob(600,600,100);
 
-  rope1=new Rope;
-  rope2=new Rope;
-  rope3=new Rope;
-  rope4=new Rope;
-  rope5=new Rope;
+  rope1 = new Rope(bob1.body, roof.body, -200, 0); 
+  rope2 = new Rope(bob2.body, roof.body, -100, 0); 
+  rope3 = new Rope(bob3.body, roof.body, 0, 0); 
+  rope4 = new Rope(bob4.body, roof.body, 100, 0); 
+  rope5 = new Rope(bob5.body, roof.body, 200, 0);
   
   
 

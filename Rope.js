@@ -1,5 +1,5 @@
 class Rope {
-    constructor(body1, body2, offset, offset )
+    constructor(body1, body2, offsetX, offsetY )
     {
         this.offsetX=offsetX
         this.offsetY=offsetY
@@ -8,20 +8,15 @@ class Rope {
         bodyB:body2,
         pointB:{x:this.offsetX,y:this.offsetY}
     }
-    this.rope = Constraint.create(options);
-    World.add(world,this.rope);
+    this.Rope=Constraint.create(options)
+    World.add(world,this.Rope);
 }
 
-rope=new Rope(bobObject1.body,roofObject.body,bobDiameter*2,0)
-rope=new Rope(bobObject2.body,roofObject.body,bobDiameter*2,0)
-rope=new Rope(bobObject3.body,roofObject.body,bobDiameter*2,0)
-rope=new Rope(bobObject4.body,roofObject.body,bobDiameter*2,0)
-rope=new Rope(bobObject5.body,roofObject.body,bobDiameter*2,0)
 
 
 display(){
-    var pointA=this.rope.bodyA.position;
-    var pointB=this.rope.bodyB.position;
+    var pointA=this.Rope.bodyA.position;
+    var pointB=this.Rope.bodyB.position;
 
     strokeWeight(2);
 
