@@ -10,6 +10,9 @@ var bob3;
 var bob4;
 var bob5;
 
+var Constraint = this.Rope.Constraint
+
+
 function preload()
 {
 	
