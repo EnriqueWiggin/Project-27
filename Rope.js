@@ -8,7 +8,7 @@ class Rope {
         bodyB:body2,
         pointB:{x:this.offsetX,y:this.offsetY}
     }
-    var Constraint = this.Rope.Constraint
+    this.Rope = Constraint.create(options);
     World.add(world,this.Rope);
 }
 
